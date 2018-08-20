@@ -7,9 +7,11 @@ def fibonacci(n):
     fib=[]
     first=0
     second=1
-    fib.append(first)
-    fib.append(second)
-    index=3
+    if(n>=1):
+        fib.append(first)
+    if(n>=2):
+        fib.append(second)
+	index=3
     while(index<=n):
         sum=first+second
         fib.append(sum)
